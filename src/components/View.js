@@ -2,13 +2,12 @@
  * https://github.com/facebook/react-native/blob/master/Libraries/Components/View/View.js
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styleSheetPropType from '../propTypes/StyleSheetPropType';
 import ViewStylePropTypes from '../propTypes/ViewStylePropTypes';
 import NativeMethodsMixin from '../mixins/NativeMethodsMixin';
 
 const stylePropType = styleSheetPropType(ViewStylePropTypes);
-
-const { PropTypes } = React;
 
 const AccessibilityTraits = [
   'none',
