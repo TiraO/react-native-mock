@@ -1,8 +1,8 @@
 /**
  * https://github.com/facebook/react-native/blob/master/Libraries/Components/View/View.js
  */
-import React from 'react';
 import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class';
 import styleSheetPropType from '../propTypes/StyleSheetPropType';
 import ViewStylePropTypes from '../propTypes/ViewStylePropTypes';
 import NativeMethodsMixin from '../mixins/NativeMethodsMixin';
@@ -49,7 +49,7 @@ const statics = {
   forceTouchAvailable,
 };
 
-const View = React.createClass({
+const View = createReactClass({
   propTypes: {
     /**
      * When true, indicates that the view is an accessibility element. By default,
