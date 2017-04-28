@@ -4,7 +4,7 @@ function createMockComponent(displayName) {
   return React.createClass({
     displayName,
     render() {
-      return null;
+      return <div {...this.props}>{...this.props.children}</div>;
     },
   });
 }
